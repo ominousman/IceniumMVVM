@@ -27,3 +27,14 @@ require.config({
     
     }
 });
+
+
+var app;
+
+require( ["app/app"], function(application) {
+
+    app = application;
+    
+    app.init();
+
+});
