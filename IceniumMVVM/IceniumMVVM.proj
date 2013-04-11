@@ -60,6 +60,7 @@
     <Content Include="index.html" />
     <Content Include="scripts\app\app.js" />
     <Content Include="scripts\app\views\home.js" />
+    <Content Include="scripts\app\views\_VewTemplate.js" />
     <Content Include="scripts\libs\jquery.min.js" />
     <Content Include="scripts\libs\kendo.mobile.min.js" />
     <Content Include="kendo\styles\images\back.png" />
