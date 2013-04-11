@@ -1,10 +1,12 @@
-define(["kendo"], function(kendo){
+define(["kendo", "jQuery"], function(kendo, $){
 
     return {
     
         init: function(initEvt) {
         
             console.log( 'Home init');
+
+            $(".log").append('<li>init</li>');
             
         },
         
@@ -13,12 +15,15 @@ define(["kendo"], function(kendo){
         
             console.log( 'Home beforeShow');
             
+            
+            $(".log").append('<li>beforeShow</li>');
         },
         
         show: function() {
         
             console.log( 'Home show');
             
+            $(".log").append('<li>show</li>');
         },
         
         viewModel: kendo.observable({

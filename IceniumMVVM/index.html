@@ -10,20 +10,28 @@
         <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
         <link href="styles/main.css" rel="stylesheet" />
     </head>
-    <body>
+    <body style="background-color:blue;" >
         
         <div data-role="view" id="home-view" data-title="Hello Kendo MVVM" data-layout="defaultLayout"
              data-init="app.views.home.init"
              data-before-show="app.views.home.beforeShow"
              data-show="app.views.home.show"
-        data-model="app.views.home.viewModel">
+             data-model="app.views.home.viewModel">
             <h1 data-bind="text: message"></h1>
-            
+                 
+                 
+                 <ul class="log"></ul>
         </div>
         
         
          <div data-role="layout" data-id="defaultLayout">
          </div>
     
+        <div data-role="layout" data-id="defaultLayout">
+            <div data-role="header">
+                <!-- default layout needed for ipad -->
+            </div>
+        </div>
+        
     </body>
 </html>
