@@ -31,10 +31,16 @@ require.config({
 
 var app;
 
-require( ["app/app"], function(application) {
+require( ["app/app", "jQuery"], function(application, $) {
 
+    
+    $(".log").append('<li>begin app init</li>');
+    
     app = application;
     
     app.init();
+    
+    
+    $(".log").append('<li>end app init</li>');
 
 });
